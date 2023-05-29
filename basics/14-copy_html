@@ -1,0 +1,2 @@
+#!/bin/bash
+cp /tmp/my_current_directory.html /tmp/alu-shell
