@@ -1,2 +1,2 @@
 #!/bin/bash
-cp /tmp/my_current_directory.html /tmp/alu-shell
+cp my_current_directory/*.html alu-shell/*.html
