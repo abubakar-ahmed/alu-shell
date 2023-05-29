@@ -1,2 +1,2 @@
 #!/bin/bash
---v /tmp/iamafile
+gcc -v /tmp/iamafile
