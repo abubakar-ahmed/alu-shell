@@ -1,2 +1,2 @@
 #!/bin/bash
-cp my_current_directory/*.html alu-shell/*.html
+cp *.html ..
