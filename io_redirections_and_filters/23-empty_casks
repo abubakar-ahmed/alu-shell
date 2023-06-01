@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./ -type f -empty | wc -l
+find . \( -type f -empty -printf "%P\n" -o -type d -empty -printf "%P/\n" \) -o -path './.*' -type f -empty -exec sh -c 'echo "${0##*/}"' {} \
