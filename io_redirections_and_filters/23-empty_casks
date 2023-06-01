@@ -1,2 +1,2 @@
 #!/bin/bash
-find_empty.sh
+find ./ -type f -empty | wc -l
