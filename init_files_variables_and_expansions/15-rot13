@@ -1,2 +1,2 @@
 #!/bin/bash
-text="Hello, World!"; echo "$text" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+tr 'A-Za-z' 'N-Za-Mn-za-m'
