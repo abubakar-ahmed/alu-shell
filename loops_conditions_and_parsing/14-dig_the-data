@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 # This script displays the groups visitors by IP and HTTP status code, and displays this data
 
-awk '{ count[$1" "$9]++ } END { for (key in count) { print count[key], key } }' apache-access.log | sort -rn | awk '{ printf "%8s %15s %s\n", $1, $2, $3 }' | head -n 10
+awk '{ count[$1" "$9]++ } END { for (key in count) { print count[key], key } }' $1 |
+  # Sort the data in descending order of occurrence
+  awk '{ printf "%8s %15s %s\n", $1, $2, $3 }' |
+  sort -rn |
+  # Limit the output to the top 10 results
+  head -n 10
